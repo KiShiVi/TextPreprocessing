@@ -12,7 +12,7 @@ It deletes stop words in input text
 
 ```TextProcessing(text)``` - constructor receives input text
 
-```processText() -> string``` - returns result text without stop words
+```TextProcessing.processText() -> string``` - returns result text without stop words
 
 ## Examples
 
