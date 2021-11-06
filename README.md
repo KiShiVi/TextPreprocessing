@@ -1,13 +1,19 @@
 # TextPreprocessing
+
 ## Description
-This program was created for text processing. 
+
+This program was created for text processing.
 
 It deletes stop words in input text
-##API
+
+## API
+
 ```TextProcessing(text)``` - constructor receives input text
 
 ```processText() -> string``` - returns result text without stop words
+
 ## Examples
+
 **Taking text from file in *utf-8***
 
 ```
@@ -22,7 +28,6 @@ file.close()
 print(Text.processText())
 ```
 
-
 **Taking text from client code**
 
 ```
@@ -32,6 +37,7 @@ print(Text.processText())
 ```
 
 ## Author
+
 Violetta Kruglikova
 
 
