@@ -1,4 +1,10 @@
 from TextProcessingClass import TextProcessing
+import codecs
 
-a = TextProcessing("Привет я с миром подвыперт под кокаином")
-print(a.processText())
+path = "C:\\Users\\kshir\\Desktop\\Text.txt"
+file = codecs.open(path, encoding='utf-8')
+
+Text = TextProcessing(file.read())
+file.close()
+print(Text.processText())
+

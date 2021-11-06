@@ -1,9 +1,10 @@
 from ReadDictClass import getDictList
+import os
 
-conjunctionPath = ""
-prepositionPath = ""
-particlePath = ""
-interjectionPath = ""
+conjunctionPath = os.getcwd() + "\\..\\Dictionaries\\conjunctions.txt"
+prepositionPath = os.getcwd() + "\\..\\Dictionaries\\prepositions.txt"
+particlePath = os.getcwd() + "\\..\\Dictionaries\\particles.txt"
+interjectionPath = os.getcwd() + "\\..\\Dictionaries\\interjections.txt"
 
 
 class TextProcessing:
@@ -16,6 +17,6 @@ class TextProcessing:
         setOfStopWords = set(getDictList(conjunctionPath, prepositionPath, particlePath, interjectionPath))
         resultText = self._text.split(' ')
         for i in range(0, len(resultText)):
-            if resultText[i] in setOfStopWords:
+            if resultText[i].lower() in setOfStopWords:
                 resultText[i] = ''
         return ' '.join([value for value in resultText if value != ''])
