@@ -23,7 +23,7 @@ print(Text.processText())
 ```
 
 
-**Taking text from client code***
+**Taking text from client code**
 
 ```
 from TextProcessingClass import TextProcessing
@@ -31,7 +31,7 @@ Text = TextProcessing("Hello world!")
 print(Text.processText())
 ```
 
-##Author
+## Author
 Violetta Kruglikova
 
 
