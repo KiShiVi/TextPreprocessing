@@ -8,6 +8,8 @@ It deletes stop words in input text
 
 ## API
 
+```from TextProcessingClass import TextProcessing``` - import TextProcessing
+
 ```TextProcessing(text)``` - constructor receives input text
 
 ```processText() -> string``` - returns result text without stop words
