@@ -1,5 +1,6 @@
 import codecs
 
+
 def getDictList(*paths) -> list:
     listOfStopWords = []
     for path in paths:
