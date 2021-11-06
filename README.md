@@ -38,6 +38,10 @@ Text = TextProcessing("Hello world!")
 print(Text.processText())
 ```
 
+## Notes
+
+Dictionary files are located in *Dictionaries* directory
+
 ## Author
 
 Violetta Kruglikova
